@@ -1,0 +1,24 @@
+header {
+  background-color: #4c956c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+header > div {
+  align-items: center;
+  display: flex;
+}
+
+header > div > img {
+  border-radius: 100%;
+  margin: 0 10px;
+  width: 50px;
+}
+
+header > div > p {
+  margin-right: 30px;
+}

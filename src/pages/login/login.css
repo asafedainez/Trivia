@@ -1,0 +1,115 @@
+@media ( prefers-reduced-motion : no-preference ) {
+
+  .login-logo {
+    animation: shake infinite 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    height: 10em;
+    width: 13em;
+  }
+}
+
+@keyframes shake {
+
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+/* Estilização a partir dessa linha */
+.container-login {
+  align-items: center;
+  background-color: #536271;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login-div {
+  align-items: center;
+  background-color: #b4c5e4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  padding: 1cm;
+  width: 400px;
+}
+
+.login-div > form {
+  align-content: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.login-div > form > input {
+  border: none;
+  border-radius: 10px;
+  height: 2.5em;
+  margin: 5px 0;
+  outline: none;
+  text-align: center;
+  width: 20em;
+}
+
+.login-div > form > input::placeholder {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.login-div > form > input:focus {
+  text-align: center;
+}
+
+.login-div > button {
+  align-self: flex-end;
+  background: url('https://img.icons8.com/ios/344/settings--v2.png') no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.login-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.login-button > button {
+  background-color: #333a41;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 2.5em;
+  margin: 5px 0;
+  transition: background-color 0.5s;
+}
+
+.login-header > button {
+  align-self: flex-end;
+}
+
+.login-button > button:hover {
+  background-color: #4c956c;
+  border: none;
+}
+
+.login-button > button:disabled:hover {
+  background-color: #f28482;
+}
